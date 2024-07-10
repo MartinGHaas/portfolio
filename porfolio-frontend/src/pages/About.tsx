@@ -3,7 +3,7 @@ const About = () => {
     <div className="w-full h-full">
       <img src="not_rust.png" alt="" className="hidden lg:block lg:w-96 2xl:w-500px  -rotate-6 aspect-auto fixed -bottom-2 -left-5" />
       <div className="h-full flex flex-col justify-around items-center">
-        <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold">Martin Haas</h1>
+        <h1 className="text-6xl lg:text-7xl xl:text-8xl font-bold text-center">Martin Haas</h1>
         <p className="text-center w-96 text-2xl">
           I am a third semester <strong>Computer Science</strong> student.
           At 19 years old, I stand out for my <strong>excellent grades</strong> and knowledge of
