@@ -16,7 +16,7 @@ export const contactMedias: { Icon: IconType, content: string, link?: string }[]
   {
     Icon: FaLinkedin,
     content: "linkedin.com/in/mg-haas",
-    link: "linkedin.com/in/mg-haas"
+    link: "https://linkedin.com/in/mg-haas"
   }
 ]
 
@@ -33,7 +33,7 @@ const Contact = () => {
           <li className="flex items-center gap-5" key={media.content}>
             <media.Icon className="text-4xl" />
             {media.link &&
-              <Link className="text-2xl font-medium" to={media.link}>
+              <Link className="text-2xl font-medium" to={media.link} target="_blank">
                 {media.content}
               </Link>
               ||
