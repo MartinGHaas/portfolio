@@ -7,7 +7,7 @@ export const contactMedias: { Icon: IconType, content: string, link?: string }[]
   {
     Icon: IoMail,
     content: "martinhaas2005@gmail.com",
-    link: "mailto"
+    link: "mailto:martinhaas2005@gmail.com"
   },
   {
     Icon: FaWhatsapp,
