@@ -1,10 +1,10 @@
-import { ComponentProps } from "react";
+import { ComponentProps, ReactNode } from "react";
 import { IconType } from "react-icons";
 import { tv, VariantProps } from "tailwind-variants";
 
 export type ButtonProps = ComponentProps<"button"> & VariantProps<typeof button> & {
   Icon?: IconType,
-  text?: string
+  children?: ReactNode
 }
 
 const button = tv({
@@ -20,11 +20,11 @@ const button = tv({
   }
 })
 
-const Button = ( { Icon, text, theme, ...props}: ButtonProps ) => {
+const Button = ( { Icon, theme, children, ...props}: ButtonProps ) => {
   return (
     <button className={ button({ theme }) } { ...props }>
       {Icon && <Icon />}
-      {text}
+      {children && children}
     </button>
   )
 }

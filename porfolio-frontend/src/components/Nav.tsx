@@ -46,10 +46,10 @@ useEffect(() => {
         <p>Martin Haas' portfolio</p>
       </div>
 
-      <div className="w-1/3 flex justify-between">
+      <div className="w-1/3 flex justify-between gap-4">
         {routes[0].children?.filter(route => route.path != location.pathname).map(route => (
           <NavLink key={route.path} to={route.path!}>
-            <h2 className="text-2xl font-semibold">
+            <h2 className="text-base lg:text-xl xl:text-2xl font-semibold">
               {route.path === "/" ? "HOME" : route.path?.substring(1).toUpperCase()}
             </h2>
           </NavLink>

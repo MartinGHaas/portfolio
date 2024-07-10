@@ -13,9 +13,14 @@ const Home = () => {
         </div>
       </div>
       <div className="flex gap-10">
-        <Button theme="light" Icon={MdFileDownloadDone} text="download resume" />
+        <Button theme="light" Icon={MdFileDownloadDone}>
+          <span className="hidden sm:block">download </span>resume
+        </Button>
         <Link  to="https://github.com/MartinGHaas" target="_blank">
-          <Button theme="dark" Icon={FaGithub} text="view github profile" />
+          <Button theme="dark" Icon={FaGithub}>
+            <span className="hidden sm:block">view </span>
+            github profile
+          </Button>
         </Link>
       </div>
     </div>
