@@ -38,7 +38,7 @@ useEffect(() => {
   }, [location.pathname]);
 
   return (
-    <div className="flex justify-between items-end">
+    <div className="flex justify-between items-end flex-wrap">
       <div>
         <h1 className="text-4xl min-h-10 font-bold">
           {pathname}
@@ -46,10 +46,10 @@ useEffect(() => {
         <p>Martin Haas' portfolio</p>
       </div>
 
-      <div className="w-1/3 flex justify-between gap-4">
+      <div className="w-1/3 flex items-end flex-col md:flex-row md:justify-between md:gap-4 md:z-10">
         {routes[0].children?.filter(route => route.path != location.pathname).map(route => (
-          <NavLink key={route.path} to={route.path!}>
-            <h2 className="text-base lg:text-xl xl:text-2xl font-semibold">
+          <NavLink key={route.path} to={route.path!} className="text-base lg:text-xl xl:text-2xl font-semibold">
+            <h2>
               {route.path === "/" ? "HOME" : route.path?.substring(1).toUpperCase()}
             </h2>
           </NavLink>

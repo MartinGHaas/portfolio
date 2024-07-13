@@ -4,7 +4,7 @@ import { tv, VariantProps } from "tailwind-variants";
 
 const themeToggle = tv({
   slots: {
-    base: "w-2/6 h-screen p-7 rounded-2xl",
+    base: "w-3/5 lg:w-2/6 h-screen p-7 rounded-2xl",
     text: "text-4xl font-bold"
   },
   variants: {
