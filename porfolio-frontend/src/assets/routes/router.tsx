@@ -22,10 +22,10 @@ export const routes: RouteObject[] = [
         path: "/contact",
         element: <Contact />
       },
-      {
-        path: "/projects",
-        element: <Projects />
-      }
+      // {
+      //   path: "/projects",
+      //   element: <Projects />
+      // }
     ]
   }
 ];

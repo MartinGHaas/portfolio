@@ -46,7 +46,7 @@ useEffect(() => {
         <p>Martin Haas' portfolio</p>
       </div>
 
-      <div className="w-1/3 flex items-end flex-col md:flex-row md:justify-between md:gap-4 md:z-10">
+      <div className="flex items-end flex-col md:flex-row md:justify-between md:gap-12 md:z-10">
         {routes[0].children?.filter(route => route.path != location.pathname).map(route => (
           <NavLink key={route.path} to={route.path!} className="text-base lg:text-xl xl:text-2xl font-semibold">
             <h2>
