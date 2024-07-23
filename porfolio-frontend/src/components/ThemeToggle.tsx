@@ -81,7 +81,6 @@ const ThemeToggle = ( {}: ThemeToggleProps ) => {
       }
       setHolding(false);
       reset();
-
       clearListners();
     }
 
@@ -91,7 +90,6 @@ const ThemeToggle = ( {}: ThemeToggleProps ) => {
       }
       setHolding(false);
       reset();
-
       clearListners();
     }
 
@@ -99,16 +97,15 @@ const ThemeToggle = ( {}: ThemeToggleProps ) => {
       document.removeEventListener("mousemove", handleMouseMove);
       document.removeEventListener("mouseup", handleMouseUp);
       document.removeEventListener("touchmove", handleTouchMove);
-      document.removeEventListener("touchcancel", handleTouchEnd);
+      document.removeEventListener("touchend", handleTouchEnd);
     }
 
     if(isHolding) {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
       document.addEventListener("touchmove", handleTouchMove);
-      document.addEventListener("touchcancel", handleTouchEnd);
+      document.addEventListener("touchend", handleTouchEnd);
     }
-
   }, [isHolding])
 
   return (
